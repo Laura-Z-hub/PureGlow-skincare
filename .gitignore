@@ -1,0 +1,25 @@
+# Local/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Runtime uploads: keep the directory, not uploaded product files
+uploads/products/*
+!uploads/products/.gitkeep
+
+# Local backups, exports, and logs
+*.log
+*.bak
+*.backup
+database/backup-*.sql
+database/*backup*.sql
+
+# OS / XAMPP default files accidentally copied into the project
+applications.html
+bitnami.css
+dashboard/
+xampp/
+hash.php
+dbtest.php
+test.php

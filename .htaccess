@@ -1,0 +1,11 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+</IfModule>
+
+<FilesMatch "^(README|.*\.sql)$">
+  Require all denied
+</FilesMatch>
+
+RedirectMatch 403 ^/(config|models|database)(/|$)
